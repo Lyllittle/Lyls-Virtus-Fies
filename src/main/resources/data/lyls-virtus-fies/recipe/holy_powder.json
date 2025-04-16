@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lyls-virtus-fies:holy_powder_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "lyls-virtus-fies:holy_powder"
+  }
+}
