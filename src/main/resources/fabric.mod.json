@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lyls-virtus-fies",
+	"version": "${version}",
+	"name": "Lyls Virtus Fies",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Lylittle"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lyls-virtus-fies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lylittle.virtus_fies.LylsVirtusFies"
+		],
+		"fabric-datagen": [
+			"lylittle.virtus_fies.LylsVirtusFiesDataGenerator"
+		],
+		"client": [
+			"lylittle.virtus_fies.LylsVirtusFiesClient"
+		]
+	},
+	"mixins": [
+		"lyls-virtus-fies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "lylittle.virtus_fies.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
