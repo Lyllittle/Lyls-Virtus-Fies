@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lyls-virtus-fies:block/holy_powder_block"
+  }
+}
