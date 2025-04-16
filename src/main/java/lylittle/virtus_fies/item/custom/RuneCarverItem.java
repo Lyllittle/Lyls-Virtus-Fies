@@ -2,7 +2,6 @@ package lylittle.virtus_fies.item.custom;
 
 import lylittle.virtus_fies.block.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -18,7 +17,7 @@ import java.util.Map;
 public class RuneCarverItem extends Item {
     private static final Map<Block, Block> RUNE_CARVER_MAP =
             Map.of(
-                    ModBlocks.HOLY_RUNE_BRICKS, Blocks.DIAMOND_BLOCK
+                    ModBlocks.HOLY_RUNE_BRICKS, ModBlocks.RUNE_PEDESTAL
             );
 
 
@@ -37,8 +36,10 @@ public class RuneCarverItem extends Item {
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                return ActionResult.SUCCESS;
             }
+            return ActionResult.PASS;
         }
-        return ActionResult.SUCCESS;
+        return ActionResult.PASS;
     }
 }

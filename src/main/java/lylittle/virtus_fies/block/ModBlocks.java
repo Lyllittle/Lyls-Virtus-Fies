@@ -1,12 +1,11 @@
 package lylittle.virtus_fies.block;
 
 import lylittle.virtus_fies.LylsVirtusFies;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import lylittle.virtus_fies.block.custom.RunePedestalBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -17,7 +16,7 @@ public class ModBlocks {
             .create().strength(1f).sounds(BlockSoundGroup.SAND)));
     public static final Block HOLY_RUNE_BRICKS = registerBlock("holy_rune_bricks", new Block(AbstractBlock.Settings
             .create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
-    public static final Block RUNE_PEDESTAL = registerBlock("rune_pedestal",new Block(AbstractBlock.Settings
+    public static final Block RUNE_PEDESTAL = registerBlock("rune_pedestal",new RunePedestalBlock(AbstractBlock.Settings
             .create().strength(3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
 
 

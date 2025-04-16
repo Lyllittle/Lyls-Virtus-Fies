@@ -11,7 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup VIRTUS_FIESITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(LylsVirtusFies.MOD_ID, "virtus_fies_items"),
+    public static final ItemGroup VIRTUS_FIES_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(LylsVirtusFies.MOD_ID, "virtus_fies_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.HOLY_POWDER))
                     .displayName(Text.translatable("itemgroup.lyls-virtus-fies_lyls-virtus-fies_items"))
                     .entries((displayContext, entries) -> {
@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.HOLY_RUNE_BRICK);
                         entries.add(ModBlocks.HOLY_RUNE_BRICKS);
                         entries.add(ModItems.RUNE_CARVER);
+                        entries.add(ModBlocks.RUNE_PEDESTAL);
                     }).build());
 
 
